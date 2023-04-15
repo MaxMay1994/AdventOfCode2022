@@ -15,7 +15,7 @@ fun getTotalScore(input: File): Int{
 }
 
 fun calculateMatch(opponentHand: Char, result: Char): Int{
-    val opponentShape = Shape.valueOf(opponentHand);
+    val opponentShape = Shape.valueOf(opponentHand)
     val yourShape = opponentShape.getNextHand(Result.valueOf(result))
     val shapeScore = yourShape.score
     val battleScore = yourShape.battle(opponentShape)
