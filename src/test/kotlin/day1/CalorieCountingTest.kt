@@ -12,13 +12,13 @@ class CalorieCountingTest {
     fun getBiggestRationTest(){
         val input = File("src/main/resources/supplies.txt")
         val result = getBiggestRation(input)
-        assertEquals(24000,result);
+        assertEquals(24000,result)
     }
 
     @Test
     fun getTopThreeBiggestRationTest(){
         val input = File("src/main/resources/supplies.txt")
         val result = getTopThreeBiggestRation(input)
-        assertEquals(45000,result);
+        assertEquals(45000,result)
     }
 }
